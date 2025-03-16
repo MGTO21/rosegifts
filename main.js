@@ -1,40 +1,26 @@
+// عند تحميل الصفحة
 document.addEventListener('DOMContentLoaded', () => {
-    const loginButton = document.querySelector('.login-button');
-    const loginForm = document.getElementById('loginForm');
-    const loginError = document.getElementById('loginError');
-
-    loginButton.addEventListener('click', () => {
-        loginForm.style.display = 'block';
-    });
-
-    window.login = () => {
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-
-        if (username === 'Estigfar' && password === 'phenmodey') {
-            window.location.href = 'admin.html';
-        } else {
-            loginError.style.display = 'block';
-        }
-    };
+    // Removed login button and form functionality
 });
 
+// تأثير التمرير على قسم الهيرو
 document.addEventListener('scroll', function() {
-    const hero = document.querySelector('.hero');
-    const scrollPosition = window.scrollY;
-    hero.style.opacity = 1 - scrollPosition / 500;
+    const hero = document.querySelector('.hero'); // تحديد قسم الهيرو
+    const scrollPosition = window.scrollY; // الحصول على موضع التمرير
+    hero.style.opacity = 1 - scrollPosition / 500; // تقليل الشفافية بناءً على التمرير
 });
 
+// تأثير التمرير على العناصر
 document.addEventListener('scroll', function() {
-    const scrollPosition = window.scrollY;
-    const elements = document.querySelectorAll('.scroll-effect');
+    const scrollPosition = window.scrollY; // الحصول على موضع التمرير
+    const elements = document.querySelectorAll('.scroll-effect'); // تحديد العناصر ذات التأثير
     elements.forEach(element => {
         if (scrollPosition > element.offsetTop - window.innerHeight + 100) {
-            element.classList.remove('scroll-effect-hidden');
-            element.classList.add('scroll-effect-visible');
+            element.classList.remove('scroll-effect-hidden'); // إظهار العنصر
+            element.classList.add('scroll-effect-visible'); // إضافة تأثير الظهور
         } else {
-            element.classList.remove('scroll-effect-visible');
-            element.classList.add('scroll-effect-hidden');
+            element.classList.remove('scroll-effect-visible'); // إخفاء العنصر
+            element.classList.add('scroll-effect-hidden'); // إضافة تأثير الإخفاء
         }
     });
 });
