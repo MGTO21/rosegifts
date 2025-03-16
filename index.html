@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر الهدايا</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8"> <!-- تحديد الترميز -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- جعل الصفحة متجاوبة -->
+    <title>متجر الهدايا</title> <!-- عنوان الصفحة -->
+    <link rel="stylesheet" href="style.css"> <!-- ربط ملف التنسيق -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:wght@400;700&family=Cairo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- استيراد الخطوط -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- استيراد أيقونات -->
 </head>
 <body class="light-mode">
+    <!-- الهيدر -->
     <header class="scroll-effect scroll-effect-hidden">
         <nav>
             <a href="#home">الرئيسية</a>
@@ -17,28 +17,23 @@
             <a href="#about">من نحن</a>
             <a href="#contact">اتصل بنا</a>
         </nav>
-        <button class="theme-toggle">Dark Mode</button>
-        <button class="lang-toggle">EN</button>
-        <button class="login-button">تسجيل الدخول</button>
+        <button class="theme-toggle">Dark Mode</button> <!-- زر تغيير الوضع -->
+        <button class="lang-toggle">EN</button> <!-- زر تغيير اللغة -->
     </header>
-    <div class="login-form" id="loginForm">
-        <h2>تسجيل الدخول</h2>
-        <input type="text" id="username" placeholder="اسم المستخدم" required>
-        <input type="password" id="password" placeholder="كلمة المرور" required>
-        <button onclick="login()">دخول</button>
-        <p id="loginError" style="color: red; display: none;">اسم المستخدم أو كلمة المرور غير صحيحة</p>
-    </div>
+
+    <!-- قسم الهيرو -->
     <div class="hero">
         <h1>مرحبًا بكم في متجر روز للهدايا</h1>
         <p>اعثر على الهدية المثالية لأحبائك</p>
-        <button onclick="location.href='#products'">تسوق الآن</button>
-        <div class="social-icons"> <a href="tel:+249112255374"><i class="fas fa-phone"></i></a>
-            <a href="https://www.facebook.com/frindsAlobied" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://wa.me/qr/G6TFPPIKXADGL1" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <!-- <a href="mailto:info@example.com"><i class="fas fa-envelope"></i></a> -->
-           
+        <button onclick="location.href='#products'">تسوق الآن</button> <!-- زر الانتقال إلى المنتجات -->
+        <div class="social-icons">
+            <a href="tel:+249112255374"><i class="fas fa-phone"></i></a> <!-- أيقونة الهاتف -->
+            <a href="https://www.facebook.com/frindsAlobied" target="_blank"><i class="fab fa-facebook-f"></i></a> <!-- أيقونة فيسبوك -->
+            <a href="https://wa.me/qr/G6TFPPIKXADGL1" target="_blank"><i class="fab fa-whatsapp"></i></a> <!-- أيقونة واتساب -->
         </div>
     </div>
+
+    <!-- قسم من نحن -->
     <section class="about scroll-effect scroll-effect-hidden" id="about">
         <h2 id="home">نبذة عن متجرنا</h2>
         <p>
@@ -68,6 +63,7 @@
         </div>
     </section>
     
+    <!-- قسم المنتجات والعروض -->
     <section class="products" id="products">
         <h2>المنتجات والعروض</h2>
         <div class="slider">
@@ -103,76 +99,77 @@
                 <img src="Images/IMG_20250310_130957_408.jpg" alt="الهديه 1">
                 <h3>الهديه 1</h3>
                 <div class="price">100 جنيه</div>
-                <button class="whatsapp-button">تواصل عبر واتساب</button>
+                <a href="https://wa.me/qr/G6TFPPIKXADGL1" target="_blank" class="whatsapp-button">تواصل عبر واتساب</a>
             </div>
             <div class="product">
                 <img src="Images/IMG_20250310_130957_359.jpg" alt="الهديه 2">
                 <h3>الهديه 2</h3>
                 <div class="price">200 جنيه</div>
-                <button class="whatsapp-button">تواصل عبر واتساب</button>
+                <a href="https://wa.me/qr/G6TFPPIKXADGL1" target="_blank" class="whatsapp-button">تواصل عبر واتساب</a>
             </div>
             <div class="product">
                 <img src="Images/IMG_20250310_130957_150.jpg" alt="الهديه 3">
                 <h3>الهديه 3</h3>
                 <div class="price">300 جنيه</div>
-                <button class="whatsapp-button">تواصل عبر واتساب</button>
+                <a href="https://wa.me/qr/G6TFPPIKXADGL1" target="_blank" class="whatsapp-button">تواصل عبر واتساب</a>
             </div>
             <div class="product">
                 <img src="Images/IMG_20250310_130944_910.jpg" alt="الهديه 4">
                 <h3>الهديه 4</h3>
                 <div class="price">400 جنيه</div>
-                <button class="whatsapp-button">تواصل عبر واتساب</button>
+                <a href="https://wa.me/qr/G6TFPPIKXADGL1" target="_blank" class="whatsapp-button">تواصل عبر واتساب</a>
             </div>
             <div class="product">
                 <img src="Images/IMG_20250310_130944_731.jpg" alt="الهديه 5">
                 <h3>الهديه 5</h3>
                 <div class="price">500 جنيه</div>
-                <button class="whatsapp-button">تواصل عبر واتساب</button>
+                <a href="https://wa.me/qr/G6TFPPIKXADGL1" target="_blank" class="whatsapp-button">تواصل عبر واتساب</a>
             </div>
             <div class="product">
                 <img src="Images/IMG_20250310_130944_631.jpg" alt="الهديه 6">
                 <h3>الهديه 6</h3>
                 <div class="price">600 جنيه</div>
-                <button class="whatsapp-button">تواصل عبر واتساب</button>
+                <a href="https://wa.me/qr/G6TFPPIKXADGL1" target="_blank" class="whatsapp-button">تواصل عبر واتساب</a>
             </div>
             <div class="product">
                 <img src="Images/IMG_20250310_130944_521.jpg" alt="الهديه 7">
                 <h3>الهديه 7</h3>
                 <div class="price">700 جنيه</div>
-                <button class="whatsapp-button">تواصل عبر واتساب</button>
+                <a href="https://wa.me/qr/G6TFPPIKXADGL1" target="_blank" class="whatsapp-button">تواصل عبر واتساب</a>
             </div>
             <div class="product">
                 <img src="Images/IMG_20250310_130944_347.jpg" alt="الهديه 8">
                 <h3>الهديه 8</h3>
                 <div class="price">800 جنيه</div>
-                <button class="whatsapp-button">تواصل عبر واتساب</button>
+                <a href="https://wa.me/qr/G6TFPPIKXADGL1" target="_blank" class="whatsapp-button">تواصل عبر واتساب</a>
             </div>
             <div class="product">
                 <img src="Images/IMG_20250310_130944_221.jpg" alt="الهديه 9">
                 <h3>الهديه 9</h3>
                 <div class="price">900 جنيه</div>
-                <button class="whatsapp-button">تواصل عبر واتساب</button>
+                <a href="https://wa.me/qr/G6TFPPIKXADGL1" target="_blank" class="whatsapp-button">تواصل عبر واتساب</a>
             </div>
             <div class="product">
                 <img src="Images/IMG_20250310_130944_217.jpg" alt="الهديه 10">
                 <h3>الهديه 10</h3>
                 <div class="price">1000 جنيه</div>
-                <button class="whatsapp-button">تواصل عبر واتساب</button>
+                <a href="https://wa.me/qr/G6TFPPIKXADGL1" target="_blank" class="whatsapp-button">تواصل عبر واتساب</a>
             </div>
             <div class="product">
                 <img src="Images/IMG_20250310_130944_203.jpg" alt="الهديه 11">
                 <h3>الهديه 11</h3>
                 <div class="price">1100 جنيه</div>
-                <button class="whatsapp-button">تواصل عبر واتساب</div>
+                <a href="https://wa.me/qr/G6TFPPIKXADGL1" target="_blank" class="whatsapp-button">تواصل عبر واتساب</a>
             </div>
             
         </div>
     </section>
-    <!-- Full-screen image view -->
+    <!-- عرض الصورة بالحجم الكامل -->
     <div class="fullscreen-overlay" id="fullscreenOverlay">
         <button class="close-button" id="closeButton">&times;</button>
         <img src="" alt="Full-screen view" id="fullscreenImage">
     </div>
+    <!-- قسم التواصل -->
     <section class="contact" id="contact">
         <h2>تواصل معنا</h2>
         <div class="contact-methods">
